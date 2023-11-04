@@ -12,38 +12,35 @@
 </head>
 
 <body>
-    <header>
-        <nav class="sticky-navbar">
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        <div class="wrapper overlay">
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#achievement">Achievement</a>
-                </li>
-                <li>
-                    <a href="#announcementdiv">Announcement</a>
-                </li>
-                <li>
-                    <a href="#aboutschedule">Schedule</a>
-                </li>
-                
-
-                <li>
-                    <a href="#">Contact Us</a>
-                </li>
-                <button class="btn btn-outline-primary" style="position: fixed; right: 5%; top: 3%">Registration</button>
+    <div id="bg"></div>
+    <nav class="navbar">
+        <div class="brand-title"><img src="./Assests/youngovator-bg.png" alt=""></div>
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">ACHIEVEMENT</a></li>
+                <li><a href="">ARCHIVE</a></li>
+                <li><a href="">ANNOUNCEMENT</a></li>
+                <li><a href="">CONTACT US</a></li>
             </ul>
         </div>
-        </nav>
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0];
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+            toggleButton.addEventListener('click',() => {
+                navbarLinks.classList.toggle('active');
+            })
+        </script>
+    </nav>
 
+    <header>
+       
         <div class="image-container">
             <h2 class="head-item"><img src="/Assests/logoY.png" class="img-fluid"  id="home"></h2><br>
             <p><b>PRESENT</b></p>
@@ -103,12 +100,11 @@
         <div class="text">
             <h4 style="color: #2474EC;">Know about our</h4>
             <h1>World Record in IIC 2.0</h1>
-           <img src="/Assests/recordimg.png"><br><br>
-           <p style="margin-left: 3rem;">WORLD RECORD FOR<br> LARGEST TECHNO-INNOVATION LESSON</p>
-            <button class="btn btn-outline-primary " style="margin-left: 3rem;">Know More</button>
+           <p style="margin-left: 0rem;">WORLD RECORD FOR<br> LARGEST TECHNO-INNOVATION LESSON</p>
+            <button class="btn btn-outline-primary " style="margin-left: 0rem;">Know More</button>
         </div>
-        <div class="image">
-            <img src="/Assests/record.jpg" class="record">
+        <div class="image-wr">
+            <img src="/Assests/record.jpg" class="record" style="height: 16rem;">
         </div>
     </div>
 
@@ -163,6 +159,8 @@
 
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="./JS/particles.min.js"></script>
+    <script type="text/javascript" src="./JS/custom.js"></script>
 </body>
 
 </html>
